@@ -7,7 +7,7 @@ from cv2 import decolor
 from nltk.corpus.reader import plaintext
 
 def main():
-    message = input("Enter plaintext or ciphertext: ")
+    message = input("Enter plaintext or ciphertext: ", max_char)
     process = input("Enter 'encrypt', 'decrypt': ")
     while process not in ('encrypt', 'decrypt'):
         process = input("Invalid process. Enter 'encrypt' or 'decrypt': ")
